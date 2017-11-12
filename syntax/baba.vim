@@ -12,7 +12,7 @@ syntax region BabaList start='\[' end=']' contains=BabaLiteralString,BabaInterpo
 
 syntax match BabaListItem /\v[^\[\]\,\'\"\#]+/ contained
 
-syntax region BabaTag start=/\v\</ skip=/\v\\./ end=/\v\>/ contained contains=BabaTag,BabaLiteralString,BabaInterpolatedString,BabaTagTransform,BabaTagIdentifier
+syntax region BabaTag start=/\v\\@<!\</ skip=/\v\\./ end=/\v\>/ contained contains=BabaTag,BabaLiteralString,BabaInterpolatedString,BabaTagTransform,BabaTagIdentifier
 syntax match BabaTagIdentifier /\v<@=[a-zA-Z0-9\-_\.]+/ contained
 syntax match BabaTagTransform /\v:[a-zA-Z0-9\-_\.]+/ contained
 
