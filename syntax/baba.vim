@@ -1,6 +1,6 @@
 syntax match BabaComment /\v#.*/
-syntax match BabaAtRule /\v^\s*\@use/
-syntax match BabaAtRule /\v^\s*\@expose/
+syntax match BabaAtRule /\v\@use/
+syntax match BabaAtRule /\v\@expose/
 
 syntax match BabaScopeIdentifier /\v^\s*([a-zA-Z0-9\-_\.]+)(\s*[\{])@=/
 syntax match BabaListIdentifier /\v^\s*([a-zA-Z0-9\-_\.]+)(\s*[\[])@=/
